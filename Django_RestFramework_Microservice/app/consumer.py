@@ -5,7 +5,7 @@ django.setup()
 
 from posts.models import Posts, Comments
 
-params = pika.URLParameters('amqps://umgxzijz:IIZFy82KsbTHZDoOLeIkcLz8mVLbbggN@moose.rmq.cloudamqp.com/umgxzijz')
+params = pika.URLParameters('')
 
 connection = pika.BlockingConnection(params)
 channel = connection.channel()
