@@ -1,0 +1,4 @@
+docker-compose up --build
+docker-compose exec backend sh
+python manage.py makemigrations posts
+python manage.py migrate
